@@ -29,9 +29,9 @@ else if (userInput === "concert-this") {
 else if (userInput === "spotify-this-song") {
     spotifyTrack(userCommand);
 }
-else if (userInput === "do-what-it-says") {
-    doWhatItSays(userCommand);
-}
+// else if (userInput === "do-what-it-says") {
+//     doWhatItSays(userCommand);
+// }
 // else {
 //     console.log("Please choose exisiting command");
 // }
@@ -97,4 +97,5 @@ function spotifyTrack(track) {
         });
 
 }
+
 
