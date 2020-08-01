@@ -29,9 +29,9 @@ else if (userInput === "concert-this") {
 else if (userInput === "spotify-this-song") {
     spotifyTrack(userCommand);
 }
-// else if (userinput === "do-what-it-says") {
-//     doWhatItSays(userCommand);
-// }
+else if (userInput === "do-what-it-says") {
+    doWhatItSays(userCommand);
+}
 // else {
 //     console.log("Please choose exisiting command");
 // }
@@ -79,11 +79,18 @@ function spotifyTrack(track) {
     spotify
         .search({ type: "track", query: songName })
         .then(function (response) {
-            console.log(response.data);
-            // console.log("Artist: " + response.data.tracks.items[0].album.artists[0].name);
-            // console.log("Song: " + response.data.tracks.items[0].name);
-            // console.log("Album: " + response.data.tracks.items[0].album.name);
-            // console.log("Preview: " + response.data.tracks.items[0].preview_url);
+            // for (var i = 0; i < response.tracks.items.length; i++) {
+            //     console.log("Artist: " + JSON.stringify(response.tracks.items[i]));
+            //     console.log("Artist: ")
+            //     // console.log("Song: " + response.tracks.items[i].name);
+            //     // console.log("Album: " + response.tracks.items[i].album.name);
+            // }
+            // console.log(response.tracks.items[0]);
+            // console.log(songName);
+            console.log("Artist: " + response.tracks.items[0].album.artists[0].name);
+            console.log("Song: " + response.tracks.items[0].name);
+            console.log("Album: " + response.tracks.items[0].album.name);
+            // console.log("Preview: " + response.tracks.items[0].preview_uri);
         })
         .catch(function (err) {
             console.log(err);
