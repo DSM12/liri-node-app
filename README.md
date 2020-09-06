@@ -30,4 +30,11 @@ $ node liri.js movie-this
 $ node liri.js concert-this
 $ node liri.js spotify-this-song
 
+# Examples of Functionality
+![spotify-this-song](https://user-images.githubusercontent.com/62487890/92321425-d9e75b00-eff7-11ea-9dd3-caf87ae353e7.png)
+![movie-this](https://user-images.githubusercontent.com/62487890/92321451-09966300-eff8-11ea-8bce-0ca755103dce.png)
+![concert-this](https://user-images.githubusercontent.com/62487890/92321457-14e98e80-eff8-11ea-8c78-6bea27e46b4c.png)
+
+
+
 https://github.com/DSM12/liri-node-app
